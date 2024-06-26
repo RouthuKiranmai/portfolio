@@ -1,0 +1,187 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7e7e8; /* Light pink background color */
+    color: #333; /* Dark text color */
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid; /* Orange border bottom */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    float: right;
+    list-style: none;
+    margin-top: 10px;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+    margin-top: 10px;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+/* Main section styles */
+#main {
+    margin-top: 20px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section-title {
+    color: #e8491d; /* Orange section title color */
+    border-bottom: #e8491d 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Profile section styles */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #e8491d; /* Orange border for profile photo */
+}
+
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transform animation */
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #e8491d; /* Orange color for profile name */
+}
+
+.profile-info p {
+    margin-bottom: 5px;
+}
+
+.profile-info a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.profile-info a:hover {
+    color: #e8491d; /* Orange color on hover */
+}
+
+/* Education section styles */
+.education {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Certifications section styles */
+.certifications {
+    text-align: center;
+}
+
+/* Skills section styles */
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header ul {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animation keyframes for pulse effect on profile photo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
